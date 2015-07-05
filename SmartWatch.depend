@@ -1,0 +1,304 @@
+# depslib dependency file v1.0
+1429906419 source:h:\workspace\nrf51\smartwatch\src\system_nrf51.c
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"system_nrf51.h"
+
+1429906419 h:\workspace\nrf51\smartwatch\inc\nrf.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+	"nrf51_deprecated.h"
+	"compiler_abstraction.h"
+
+1429906419 h:\workspace\nrf51\smartwatch\inc\nrf51.h
+	<core_cm0.h>
+	"system_nrf51.h"
+
+1429906419 h:\workspace\nrf51\smartwatch\inc\system_nrf51.h
+	<stdint.h>
+
+1429906419 h:\workspace\nrf51\smartwatch\inc\nrf51_bitfields.h
+	<core_cm0.h>
+
+1429906419 h:\workspace\nrf51\smartwatch\inc\nrf51_deprecated.h
+
+1429906419 h:\workspace\nrf51\smartwatch\inc\compiler_abstraction.h
+
+1429906419 source:h:\workspace\nrf51\smartwatch\startup_nrf51.s
+
+1421301504 source:h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_delay.c
+	<stdio.h>
+	"compiler_abstraction.h"
+	"nrf.h"
+	"nrf_delay.h"
+
+1421301514 h:\workspace\nrf51\smartwatch\cmsis\hal\compiler_abstraction.h
+
+1424933763 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+	"nrf51_deprecated.h"
+	"compiler_abstraction.h"
+
+1425160090 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf51.h
+	"core_cm0.h"
+	"system_nrf51.h"
+
+1424805756 h:\workspace\nrf51\smartwatch\cmsis\hal\system_nrf51.h
+	<stdint.h>
+
+1421301514 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf51_bitfields.h
+	<core_cm0.h>
+
+1421301514 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf51_deprecated.h
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_delay.h
+	"nrf.h"
+
+1424898915 source:h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_ecb.c
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"nrf.h"
+	"nrf_ecb.h"
+
+1428063679 h:\workspace\nrf51\smartwatch\cmsis\hal\string.h
+	"nrf.h"
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_ecb.h
+	<stdint.h>
+
+1421301504 source:h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_nvmc.c
+	"stdbool.h"
+	"nrf.h"
+	"nrf_nvmc.h"
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_nvmc.h
+	<stdint.h>
+
+1421301504 source:h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_soc.c
+	<stdlib.h>
+	"nrf_soc.h"
+	"nrf_error.h"
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_soc.h
+	<stdint.h>
+	"nrf51.h"
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_error.h
+
+1424857270 source:h:\workspace\nrf51\smartwatch\cmsis\simple_uart.c
+	<stdint.h>
+	<string.h>
+	"nrf.h"
+	"simple_uart.h"
+	"nrf_delay.h"
+	"nrf_gpio.h"
+
+1424856718 h:\workspace\nrf51\smartwatch\cmsis\simple_uart.h
+	<stdbool.h>
+	<stdint.h>
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_gpio.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+
+1424979307 source:h:\workspace\nrf51\smartwatch\cmsis\spi_master.c
+	"app_error.h"
+	"nrf_gpio.h"
+	"nrf_soc.h"
+	"nrf51_bitfields.h"
+	"spi_master.h"
+
+1421301506 h:\workspace\nrf51\smartwatch\cmsis\hal\app_error.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_error.h"
+
+1424900353 h:\workspace\nrf51\smartwatch\cmsis\spi_master.h
+	<stdint.h>
+	<stdlib.h>
+
+1425035532 source:h:\workspace\nrf51\smartwatch\cmsis\twi_hw_master.c
+	"twi_master.h"
+	<stdbool.h>
+	<stdint.h>
+	"nrf.h"
+	"nrf_delay.h"
+	"nrf_gpio.h"
+
+1430377209 h:\workspace\nrf51\smartwatch\cmsis\twi_master.h
+	<stdbool.h>
+	<stdint.h>
+
+1436079899 source:h:\workspace\nrf51\smartwatch\src\main.c
+	"nrf.h"
+	<math.h>
+	"nrf_delay.h"
+	"nrf_gpio.h"
+	"nrf_pwm.h"
+	"twi_master.h"
+	"SSD1306.h"
+	"LSM303.h"
+	"BMP180.h"
+	"hardware.h"
+	"light.h"
+	"sound.h"
+	"timework.h"
+	"menu.h"
+	"UI.h"
+
+1436046707 source:h:\workspace\nrf51\smartwatch\src\ssd1306\defaultfonts.c
+
+1436028657 source:h:\workspace\nrf51\smartwatch\src\ssd1306\ssd1306.c
+	"SSD1306.h"
+	"nrf.h"
+	"nrf_delay.h"
+	"nrf_gpio.h"
+	"debug.h"
+	"spi_master.h"
+	"app_util_platform.h"
+	"string.h"
+
+1435931128 h:\workspace\nrf51\smartwatch\src\ssd1306\ssd1306.h
+	"nrf.h"
+	"spi_master.h"
+
+1424856506 h:\workspace\nrf51\smartwatch\cmsis\hal\debug.h
+	"simple_uart.h"
+
+1421301506 h:\workspace\nrf51\smartwatch\cmsis\hal\app_util_platform.h
+	<stdint.h>
+	"compiler_abstraction.h"
+	"nrf51.h"
+	"app_error.h"
+
+1434099725 source:h:\workspace\nrf51\smartwatch\src\bmp180\bmp180.c
+	"BMP180.h"
+	"twi_master.h"
+	"string.h"
+
+1434099725 h:\workspace\nrf51\smartwatch\src\bmp180\bmp180.h
+	"nrf.h"
+	<stdbool.h>
+	<stdint.h>
+	"nrf_delay.h"
+
+1436030973 source:h:\workspace\nrf51\smartwatch\src\lsm303\lsm303.c
+	"twi_master.h"
+	"LSM303.h"
+	"nrf.h"
+
+1428603241 h:\workspace\nrf51\smartwatch\src\lsm303\lsm303.h
+	<stdbool.h>
+	<stdint.h>
+
+1428599144 source:h:\workspace\nrf51\smartwatch\src\lsm303\lsm303_process.c
+	"SSD1306.h"
+	"string.h"
+	<math.h>
+	"debug.h"
+	"LSM303.h"
+
+1425225712 source:h:\workspace\nrf51\smartwatch\src\string.c
+	"string.h"
+
+1425226078 h:\workspace\nrf51\smartwatch\src\string.h
+	"nrf.h"
+	<stdint.h>
+
+1431285511 source:h:\workspace\nrf51\smartwatch\cmsis\nrf_pwm.c
+	"nrf_pwm.h"
+	"nrf.h"
+	"nrf_delay.h"
+	"nrf_gpiote.h"
+	"nrf_gpio.h"
+
+1431277557 h:\workspace\nrf51\smartwatch\cmsis\nrf_pwm.h
+	<stdint.h>
+
+1421301504 h:\workspace\nrf51\smartwatch\cmsis\hal\nrf_gpiote.h
+	"nrf.h"
+
+1436047614 source:h:\workspace\nrf51\smartwatch\src\ui.c
+	"UI.h"
+	"nrf.h"
+	"SSD1306.h"
+	"light.h"
+	"timework.h"
+	"hardware.h"
+	"menu.h"
+	"LSM303.h"
+	"twi_master.h"
+
+1436047728 h:\workspace\nrf51\smartwatch\src\ui.h
+	"nrf.h"
+	"stdbool.h"
+
+1430407314 source:h:\workspace\nrf51\smartwatch\src\dispatcher.c
+	"dispatcher.h"
+
+1430407128 h:\workspace\nrf51\smartwatch\src\dispatcher.h
+
+1431210380 source:h:\workspace\nrf51\smartwatch\src\light.c
+	"light.h"
+	"hardware.h"
+	"nrf_gpio.h"
+	"nrf_delay.h"
+
+1434013642 h:\workspace\nrf51\smartwatch\src\light.h
+	<stdbool.h>
+	"nrf.h"
+
+1435910962 h:\workspace\nrf51\smartwatch\src\hardware.h
+
+1431330451 source:h:\workspace\nrf51\smartwatch\src\sound.c
+	"sound.h"
+	"nrf.h"
+	"nrf_pwm.h"
+	"hardware.h"
+	"nrf_delay.h"
+	"nrf_gpio.h"
+
+1431330451 h:\workspace\nrf51\smartwatch\src\sound.h
+	"nrf.h"
+	"nrf_pwm.h"
+
+1436039066 source:h:\workspace\nrf51\smartwatch\src\menu.c
+	"menu.h"
+	"UI.h"
+	"hardware.h"
+	"SSD1306.h"
+	"games.h"
+
+1436026774 h:\workspace\nrf51\smartwatch\src\menu.h
+	"nrf.h"
+
+1431277333 source:h:\workspace\nrf51\smartwatch\cmsis\nrf_pwm_noglitch.c
+
+1425458052 source:h:\workspace\nrf51\smartwatch\src\timework.c
+	"timework.h"
+
+1432334184 h:\workspace\nrf51\smartwatch\src\timework.h
+	"nrf.h"
+
+1434099650 source:h:\workspace\nrf51\smartwatch\src\resources.c
+
+1436031312 source:h:\workspace\nrf51\smartwatch\src\games.c
+	"games.h"
+	"sound.h"
+	"LSM303.h"
+
+1436027525 h:\workspace\nrf51\smartwatch\src\games.h
+	"SSD1306.h"
+	"nrf.h"
+	"nrf_delay.h"
+	"nrf_gpio.h"
+	"hardware.h"
+	"debug.h"
+	"spi_master.h"
+	"app_util_platform.h"
+	"string.h"
+	"menu.h"
+
