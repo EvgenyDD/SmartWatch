@@ -1,0 +1,18 @@
+1. Waterproof;
+2. nRF24L01+ compatible;
+
+3. advanced clock;
+4. compass;
+5. smart budilnik
+
+6. random ball generator - «Yes» è «No» «Can't really say»  «You bet»
+7. pedometer
+
+8. snake game;
+9. game of life;
+
+
+AVG ADV - 183uA	+7uA
+NORM - 11.3mA
+norf-OFF - 13uA +7uA
+Reading const accel = 63(83)uA + 7uA

@@ -1,0 +1,42 @@
+https://github.com/RIOT-OS/RIOT/wiki/Board:-yunjia-nrf51822
+
+The NRF51822 module by Yunjia Technology is a minimalistic but very low-priced module utilizing Nordics NRF51822QFAA SoC. The SoC features 16Kb of RAM, 256Kb of flash ROM and comes on top of the usual micro-controller peripherals with a 2.4GHz radio that supports both Nordics proprietary ShockBurst as well as Bluetooth Low Energy (BLE).
+
+MCU 	NRF51822QFAA
+Family 	ARM Cortex-M0
+Vendor 	Nordic Semiconductor
+RAM 	16Kb
+Flash 	256Kb
+Freq 	16MHz
+FPU 	no
+Timers 	3 (2x 16-bit, 1x 32-bit [TIMER0])
+ADCs 	1x 10-bit (8 channels)
+UARTs 	1
+SPIs 	2
+I2Cs 	2
+Vcc 	1.8V - 3.6V
+------------------
+Description:
+ 
+1.IC features include:
+16 KB and 256 KB on-chip flash RAM;
+Digital and mixed-signal surrounding, including SPI, 2 - wire, ADC and quadrature decoder;
+16 PPI channels;
+Load match on a chip "when the power supply range of 1.8-3.6 V, 1.75 1.95 V" bypass mode;
+Slice up and pull DC/DC converter for 3 v battery (for example, a button battery);
+On +/- 250 parts per million (PPM) 32 KHZ RC oscillator, the bluetooth application of low power consumption, does not need external 32 KHZ crystals, can save cost and PCB space;
+6x6mm 48pin QFN packages, providing up to 32 GPIO;
+A complete bluetooth protocol stack (the link layer to the configuration file).
+2.Nordic Semiconductor nRF51822 is a multi-protocol bluetooth low energy / 2.4 GHz dedicated RF single chip solutions, widely used in PC peripheral, Internet TV, toys, remote controls, sports/fitness/health sensors and automation applications.
+3.NRF51822 S110 is downloadable, royalty-free, precompiled binary bluetooth stack, low power consumption can be independent programming and update. Features include:
+Asynchronous API and event-driven SVC;
+The runtime protection;
+GATT, GAP and L2CAP level API;
+Peripheral and broadcasting role;
+GATT client and the server;
+And more than 2.4 GHz RF proprietary protocols of parallel protocol operations;
+Less than 128 KB of code and 6 KB of RAM, with more than 128 KB of flash memory for the application and 10 KB of RAM;
+And use a generation compared to nRF8001 dual chip application, running S110 stack nRF51822 cut as much as 50% of power consumption.
+4.S110 stack and nRF51822 nRF518 SDK to cooperate with each other and nRF518 contains comprehensive bluetooth low energy profile, services, and sample collection.
+NRF51822 for proprietary application provides a new modified Gazell 2.4 GHz RF protocol stack, and series nRF24L Gazell application to interoperability. Compared with the last generation nRF24LE1, nRF51822 combined with new Gazell protocol stack can cut as much as 30% of power consumption.
+ 

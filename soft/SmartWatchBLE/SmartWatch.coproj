@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.6" name="SmartWatch">
+  <Target name="SmartWatch" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="305" chipName="STM32F103C8" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="1"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value="-std=gnu99"/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F103C8"/>
+          <Define name="STM32F10X_MD"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Not use C Library"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00010000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00005000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/smartwatch/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="LBTx"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F10x_MD_64.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="50" name="CMSIS core" path="" type="2"/>
+    <Component id="439" name="CMSIS_Boot" path="" type="2"/>
+    <Component id="440" name="RCC" path="" type="2"/>
+    <Component id="441" name="CRC" path="" type="2"/>
+    <Component id="442" name="PWR" path="" type="2"/>
+    <Component id="443" name="BKP" path="" type="2"/>
+    <Component id="444" name="GPIO" path="" type="2"/>
+    <Component id="445" name="EXTI" path="" type="2"/>
+    <Component id="446" name="DMA" path="" type="2"/>
+    <Component id="448" name="RTC" path="" type="2"/>
+    <Component id="449" name="IWDG" path="" type="2"/>
+    <Component id="452" name="SPI" path="" type="2"/>
+    <Component id="453" name="I2C" path="" type="2"/>
+    <Component id="455" name="FLASH" path="" type="2"/>
+    <Component id="456" name="TIM" path="" type="2"/>
+    <Component id="457" name="ADC" path="" type="2"/>
+    <Component id="458" name="USART" path="" type="2"/>
+    <Component id="467" name="MISC" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="RTE/CMSIS/twi_master.h" path="RTE/CMSIS/twi_master.h" type="1"/>
+    <File name="RTE/CMSIS/nrf_pwm.h" path="RTE/CMSIS/nrf_pwm.h" type="1"/>
+    <File name="RTE/CMSIS/sound.h" path="RTE/CMSIS/sound.h" type="1"/>
+    <File name="RTE/Application/UI.h" path="RTE/Application/UI.h" type="1"/>
+    <File name="RTE/Application/menu.c" path="RTE/Application/menu.c" type="1"/>
+    <File name="RTE/config/pstorage_platform.h" path="RTE/config/pstorage_platform.h" type="1"/>
+    <File name="RTE/Application/dispatcher.c" path="RTE/Application/dispatcher.c" type="1"/>
+    <File name="RTE/CMSIS/timework.c" path="RTE/CMSIS/timework.c" type="1"/>
+    <File name="RTE/RTE_Components.h" path="RTE/RTE_Components.h" type="1"/>
+    <File name="RTE/Application/alarm.h" path="RTE/Application/alarm.h" type="1"/>
+    <File name="RTE/CMSIS/SSD1306" path="" type="2"/>
+    <File name="RTE/CMSIS/BMP180/BMP180.c" path="RTE/CMSIS/BMP180/BMP180.c" type="1"/>
+    <File name="RTE/Application/main.c" path="RTE/Application/main.c" type="1"/>
+    <File name="RTE/CMSIS/string.h" path="RTE/CMSIS/string.h" type="1"/>
+    <File name="RTE/CMSIS/light.h" path="RTE/CMSIS/light.h" type="1"/>
+    <File name="RTE/Application" path="" type="2"/>
+    <File name="RTE/Application/games.c" path="RTE/Application/games.c" type="1"/>
+    <File name="RTE/CMSIS/SSD1306/DefaultFonts.c" path="RTE/CMSIS/SSD1306/DefaultFonts.c" type="1"/>
+    <File name="RTE/CMSIS/sound.c" path="RTE/CMSIS/sound.c" type="1"/>
+    <File name="RTE/CMSIS/string.c" path="RTE/CMSIS/string.c" type="1"/>
+    <File name="RTE/CMSIS/LSM303/LSM303.h~RF214de4c1.TMP" path="RTE/CMSIS/LSM303/LSM303.h~RF214de4c1.TMP" type="1"/>
+    <File name="RTE/Application/menu.h" path="RTE/Application/menu.h" type="1"/>
+    <File name="RTE/Application/resources.c" path="RTE/Application/resources.c" type="1"/>
+    <File name="RTE/CMSIS/timework.h" path="RTE/CMSIS/timework.h" type="1"/>
+    <File name="RTE/Application/BLE_Indicator.c" path="RTE/Application/BLE_Indicator.c" type="1"/>
+    <File name="RTE/CMSIS/nrf_gpiote.h" path="RTE/CMSIS/nrf_gpiote.h" type="1"/>
+    <File name="RTE/Application/btn_ble.h" path="RTE/Application/btn_ble.h" type="1"/>
+    <File name="RTE/Device/nRF51822_xxAA" path="" type="2"/>
+    <File name="RTE/Device" path="" type="2"/>
+    <File name="RTE/Device/nRF51822_xxAA/system_nrf51.c" path="RTE/Device/nRF51822_xxAA/system_nrf51.c" type="1"/>
+    <File name="RTE/CMSIS/LSM303/LSM303_process.c" path="RTE/CMSIS/LSM303/LSM303_process.c" type="1"/>
+    <File name="RTE/Application/UI.c" path="RTE/Application/UI.c" type="1"/>
+    <File name="RTE" path="" type="2"/>
+    <File name="RTE/CMSIS/light.c" path="RTE/CMSIS/light.c" type="1"/>
+    <File name="RTE/CMSIS/BMP180/BMP180.h" path="RTE/CMSIS/BMP180/BMP180.h" type="1"/>
+    <File name="RTE/CMSIS/BMP180" path="" type="2"/>
+    <File name="RTE/CMSIS/LSM303/LSM303.h" path="RTE/CMSIS/LSM303/LSM303.h" type="1"/>
+    <File name="RTE/Application/BLE_App.h" path="RTE/Application/BLE_App.h" type="1"/>
+    <File name="RTE/Device/nRF51822_xxAA/arm_startup_nrf51.s" path="RTE/Device/nRF51822_xxAA/arm_startup_nrf51.s" type="1"/>
+    <File name="RTE/CMSIS/spi_master.h" path="RTE/CMSIS/spi_master.h" type="1"/>
+    <File name="RTE/config/hardware.h" path="RTE/config/hardware.h" type="1"/>
+    <File name="RTE/CMSIS/LSM303/LSM303.h~RF1efd39b8.TMP" path="RTE/CMSIS/LSM303/LSM303.h~RF1efd39b8.TMP" type="1"/>
+    <File name="RTE/CMSIS/LSM303/LSM303.h~RF1d616cef.TMP" path="RTE/CMSIS/LSM303/LSM303.h~RF1d616cef.TMP" type="1"/>
+    <File name="RTE/config" path="" type="2"/>
+    <File name="RTE/config/Periph.c" path="RTE/config/Periph.c" type="1"/>
+    <File name="RTE/CMSIS/SSD1306/SSD1306.h" path="RTE/CMSIS/SSD1306/SSD1306.h" type="1"/>
+    <File name="RTE/Application/btn_ble.c" path="RTE/Application/btn_ble.c" type="1"/>
+    <File name="RTE/CMSIS/twi_hw_master_sd.c" path="RTE/CMSIS/twi_hw_master_sd.c" type="1"/>
+    <File name="RTE/CMSIS/LSM303" path="" type="2"/>
+    <File name="RTE/Application/dispatcher.h" path="RTE/Application/dispatcher.h" type="1"/>
+    <File name="RTE/config/device_manager_cnfg.h" path="RTE/config/device_manager_cnfg.h" type="1"/>
+    <File name="RTE/config/nrf_drv_config.h" path="RTE/config/nrf_drv_config.h" type="1"/>
+    <File name="RTE/CMSIS/LSM303/LSM303.c" path="RTE/CMSIS/LSM303/LSM303.c" type="1"/>
+    <File name="RTE/Application/BLE_App.c" path="RTE/Application/BLE_App.c" type="1"/>
+    <File name="RTE/Application/alarm.c" path="RTE/Application/alarm.c" type="1"/>
+    <File name="RTE/Application/games.h" path="RTE/Application/games.h" type="1"/>
+    <File name="RTE/CMSIS/twi_hw_master.c" path="RTE/CMSIS/twi_hw_master.c" type="1"/>
+    <File name="RTE/CMSIS" path="" type="2"/>
+    <File name="RTE/config/Periph.h" path="RTE/config/Periph.h" type="1"/>
+    <File name="RTE/CMSIS/nrf_pwm.c" path="RTE/CMSIS/nrf_pwm.c" type="1"/>
+    <File name="RTE/CMSIS/SSD1306/SSD1306.c" path="RTE/CMSIS/SSD1306/SSD1306.c" type="1"/>
+    <File name="RTE/CMSIS/spi_master.c" path="RTE/CMSIS/spi_master.c" type="1"/>
+  </Files>
+</Project>
